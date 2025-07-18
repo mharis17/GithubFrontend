@@ -87,7 +87,7 @@ export class CallbackComponent implements OnInit {
       if (isAuth) {
         this.error = false;
         setTimeout(() => {
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/github-integration']);
         }, 1500);
       } else {
         this.error = true;

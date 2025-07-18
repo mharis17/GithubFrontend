@@ -52,7 +52,7 @@ export class AuthService {
   checkAuthStatusAndRedirect(router: Router) {
     this.apiService.get<any>('/auth/status').subscribe(res => {
       if (res.success && res.data && res.data.connected) {
-        router.navigate(['/dashboard']);
+        router.navigate(['/github-integration']);
       }
     });
   }

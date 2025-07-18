@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
             <mat-icon matListItemIcon>home</mat-icon>
             <span matListItemTitle>Home</span>
           </a>
-          <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+          <a mat-list-item routerLink="/github-integration" routerLinkActive="active">
             <mat-icon matListItemIcon>dashboard</mat-icon>
             <span matListItemTitle>Dashboard</span>
           </a>

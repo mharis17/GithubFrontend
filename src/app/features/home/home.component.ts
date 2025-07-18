@@ -91,7 +91,7 @@ import { AuthService } from '../../core/services/auth.service';
               <div class="status-text">
                 <h3>Connected to GitHub</h3>
                 <p>Your GitHub account is connected and data is being synced.</p>
-                <button mat-button color="primary" routerLink="/dashboard">
+                <button mat-button color="primary" routerLink="/github-integration">
                   Go to Dashboard
                 </button>
               </div>

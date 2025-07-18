@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AuthGuard } from './core/guards/auth.guard';
+import { RawDataGridComponent } from './features/raw-data-grid/raw-data-grid.component';
 
 export const routes: Routes = [
   {
@@ -34,7 +35,11 @@ export const routes: Routes = [
     loadComponent: () => import('./features/material-test/material-test.component').then(m => m.MaterialTestComponent)
   },
   {
+    path: 'raw-data',
+    component: RawDataGridComponent
+  },
+  {
     path: '**',
-    redirectTo: '/dashboard'
+    redirectTo: '/login'
   }
 ];
