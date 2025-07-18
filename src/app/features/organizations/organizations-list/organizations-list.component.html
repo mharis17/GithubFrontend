@@ -1,0 +1,6 @@
+<button mat-raised-button color="primary" (click)="syncOrganizations()" [disabled]="syncing">
+  {{ syncing ? 'Syncing...' : 'Sync Organizations' }}
+</button>
+
+<!-- Existing organizations list content below -->
+<ng-content></ng-content> 
